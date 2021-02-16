@@ -120,7 +120,19 @@ public class SimpleLinkedListImpl<E> implements LinkedList<E> {
         public IteratorLinkedList() {
             this.thisNode = firstElement;
         }
-        
+
+//      не доделал
+        @Override
+        public void remove() {
+//            if (hasNext()) {
+//                Node<E> temp =
+//                thisNode.last.next = thisNode.next;
+//                thisNode.next.last = thisNode.last;
+//                thisNode = null;
+//                size--;
+//            }
+        }
+
         @Override
         public boolean hasNext() {
             return nextIndex < size;

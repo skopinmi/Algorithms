@@ -23,12 +23,12 @@ public interface LinkedList<E> extends Iterable<E> {
     class Node<E> {
         E item;
         Node<E> next;
-//        Node<E> last;
+        Node<E> last;
 
         public Node(E item, Node<E> next) {
             this.item = item;
             this.next = next;
-//            this.last = this;
+            this.last = this;
         }
     }
 
