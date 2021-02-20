@@ -29,12 +29,12 @@ public class Backpack {
             System.out.println(item.toString());
         }
 
-        for (ArrayList<Item> list: backpack.allVariants) {
-            System.out.println("----");
-            for (Item it: list) {
-                System.out.println(it.toString());
-            }
-        }
+//        for (ArrayList<Item> list: backpack.allVariants) {
+//            System.out.println("----");
+//            for (Item it: list) {
+//                System.out.println(it.toString());
+//            }
+//        }
 
     }
 
