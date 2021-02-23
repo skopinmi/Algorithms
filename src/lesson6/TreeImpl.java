@@ -18,7 +18,7 @@ public class TreeImpl<E extends Comparable<? super E>> implements Tree<E> {
 
     private int size;
     private Node<E> root;
-    private int level;
+    private int height;
 
 
     @Override
@@ -47,7 +47,7 @@ public class TreeImpl<E extends Comparable<? super E>> implements Tree<E> {
         } else {
             previous.setRightChild(newNode);
         }
-        level = 1 + Math.max(height(root.getLeftChild()), height(root.getRightChild()));
+        height = 1 + Math.max(height(root.getLeftChild()), height(root.getRightChild()));
         size++;
     }
 
@@ -257,11 +257,11 @@ public class TreeImpl<E extends Comparable<? super E>> implements Tree<E> {
 
     // пересчет level происходит только при добавлении элемента
     @Override
-    public int getLevel(){
-        return level;
+    public int getHeight(){
+        return height;
     }
 //    пересчет level происходит при каждом вызове метода...
-//    public int getLevel2() {
+//    public int getHeight2() {
 //        return height(root);
 //    }
 //

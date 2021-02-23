@@ -22,7 +22,7 @@ public class Main {
         }
 
         // пока не соберет первое сбалансированное дерево
-        
+
 //        int count = 0;
 //        do {
 //            Tree<Integer> tree = generateTree(min, max, level);
@@ -39,7 +39,7 @@ public class Main {
 //            size = result.size();
             int numberForPutIn = max - (int) (Math.random() * (max - min));
             result.add(numberForPutIn);
-        } while (result.getLevel() <= level);
+        } while (result.getHeight() <= level);
 //        } while (result.getLevel() <= level && size != result.size());
         return result;
     }

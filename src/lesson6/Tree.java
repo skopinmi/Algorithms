@@ -24,5 +24,5 @@ public interface Tree<E extends Comparable<? super E>> {
 
     boolean isBalanced();
 
-    int getLevel();
+    int getHeight();
 }
