@@ -31,6 +31,7 @@ public class Main {
         graph.addEdges("Курск", "Орел", "Воронеж");
         graph.addEdges("Воронеж", "Липецк", "Саратов", "Курск");
 
+        graph.display();
         graph.bestWay("Москва", "Воронеж");
     }
 }
